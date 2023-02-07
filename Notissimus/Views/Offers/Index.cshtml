@@ -1,0 +1,32 @@
+﻿@model Notissimus.Models.Offer
+
+@{
+    ViewData["Title"] = "Home page";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <h1 class="text-center">Offer Details</h1>
+    <table  class="table table-bordered table-striped table-dark" >
+        <thead >
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Type</th>
+            <th scope="col">Bid</th>
+            <th scope="col">CBid</th>
+            <th scope="col">Available</th>
+            <th scope="col">Other properties</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>@Model.Id</td>
+            <td>@Model.Type</td>
+            <td>@Model.Bid</td>
+            <td>@(Model.CBid.HasValue ? Model.CBid.Value.ToString() : "")</td>
+            <td>@Model.Available</td>
+            <td>@Model.OtherOfferProperties</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

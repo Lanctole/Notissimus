@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace Notissimus.Pages
 {
@@ -14,7 +15,7 @@ namespace Notissimus.Pages
 
         public void OnGet()
         {
-
+            
         }
     }
 }
